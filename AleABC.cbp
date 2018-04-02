@@ -32,14 +32,15 @@
 		</Build>
 		<Compiler>
 			<Add option="-pedantic" />
-			<Add option="-std=c++11" />
 			<Add option="-Wextra" />
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
 		</Compiler>
 		<Linker>
 			<Add library="SDL2" />
 			<Add library="SDL2main" />
 			<Add library="SDL2_image" />
+			<Add library="SDL2_ttf" />
 		</Linker>
 		<Unit filename="include/AleGame.h" />
 		<Unit filename="main.cpp" />

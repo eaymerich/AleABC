@@ -1,10 +1,12 @@
+#include <iostream>
 #include "AleGame.h"
 
 int main() {
     AleGame aleGame;
     try {
         aleGame.start();
-    } catch (std::exception e) {
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << std::endl;
     }
     return 0;
 }
